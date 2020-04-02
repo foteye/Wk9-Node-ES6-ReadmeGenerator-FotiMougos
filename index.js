@@ -26,7 +26,7 @@ async function queryGitHub(username) {
 }
 
 function writeToFile(answers) {
-    let template = stripIndent`# ${answers.title}
+    let template = `# ${answers.title}
     Authored by ${answers.username} ( ${answers.email} ) <br>
     ![Profile Picture]( ${answers.profileImageURL} "Profile Pic")
     
